@@ -1,0 +1,234 @@
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.menuLogo{
+    display: flex;
+    gap: 10px;
+}
+
+.menuLogo button{
+    background-color: #fff;
+    border: none;
+}
+
+
+.ghostContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+    
+}
+
+.menuMobile {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    z-index: 11;
+    /* Aquí está el cambio clave: eliminamos la transición y usamos animation */
+    animation: slideOut 0.3s ease-in-out forwards;
+}
+
+.menuMobile.active {
+    left: 0;
+    animation: slideIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Nuevas animaciones para el deslizamiento */
+@keyframes slideIn {
+    from { left: -100%; }
+    to { left: 0; }
+}
+
+@keyframes slideOut {
+    from { left: 0; }
+    to { left: -100%; }
+}
+
+
+.buttonCloseM{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+}
+
+.linksM{
+    font-weight: bold;
+}
+
+
+
+
+
+.cartAvatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.cart button{
+    background-color: #fff;
+    border: none;
+}
+
+
+.quantityIcon{
+    position: relative;  
+    display: inline-block;
+}
+
+.cartQuantity{
+    position: absolute;
+    top: -6px;
+    right: -1px;
+    font-weight: bold;
+    background-color: #FF7D1B;
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+
+.countCart{
+    position: absolute;
+    z-index: 101;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    right: 5%;
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeOutCart .3s ease-in-out forwards;
+}
+
+.countCart.active {
+    animation: fadeInCart .3s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+#cartM{
+    padding: 15px 0 20px 15px;
+    margin: 0;
+    font-weight: bold;
+}
+
+hr{
+    margin: 0;
+}
+
+.emptyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 78px 0;
+}
+
+
+
+.emptyContainer p{
+    margin: 0;
+}
+
+.avatarContainer{
+    width: 30px;
+}
+
+.avatarContainer img{
+    width: 100%;
+}
+
+
+
+@keyframes fadeInCart {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutCart {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+
+
+
+.cartItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.imgCart{
+    width: 60px;
+}
+
+.imgCart img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.itemDetails p{
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.total{
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.containerButtonCart{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.containerButtonCart button{
+    width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #FF7D1B;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:1023px){
+    .countCart{
+        width: 500px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+}

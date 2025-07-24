@@ -1,0 +1,11 @@
+.bodyFlex{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;   
+    padding: 50px;
+}
+
+.centerMainContent{
+    display: flex;
+    justify-content: center;
+}

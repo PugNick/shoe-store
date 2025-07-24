@@ -1,0 +1,112 @@
+.bodyContainerD{
+    max-width: 750px;
+}
+
+.subTtitleD{
+    font-weight: 600;
+    color: rgb(125, 125, 125);
+    font-size: 15px;
+    margin: 0;
+}
+
+.productNameD{
+    margin: 0;
+    font-size: 50px;
+}
+
+.productDescriptionD{
+    color: rgb(125, 125, 125);
+}
+
+.priceOffer{
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+    height: 80px;
+}
+
+.newPrice{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.percentage{
+    background-color: #000;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 8px;
+}
+
+.oldPrice{
+    margin: 0 0 30px 0;
+    color: rgb(125, 125, 125);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+
+
+.quantityControlsD{
+    display: flex;
+    gap: 15px;
+}
+
+.quantityCounterD{
+    background-color: #F7F8FD;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    border-radius: 8px;
+}
+
+.quantityCounterD button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.quantityCounterD span{
+    font-weight: 700;
+}
+
+.quantityCounterD img{
+    transition: .3s;
+}
+
+.quantityCounterD button:hover img{
+    filter: brightness(150%);
+}
+
+
+.addToCartD{
+    background-color: #FF7D1B;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 60px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.addToCartD span{
+    color: #000;
+    font-weight: 700;
+}
+
+.addToCartD img{
+    filter: brightness(0);
+    z-index: 1;
+}
+
+
+.addToCartD:hover{
+    background-color: #FFAC6A;
+}

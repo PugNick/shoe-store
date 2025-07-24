@@ -1,0 +1,109 @@
+.bodyContainerM{
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+.subTitle{
+    margin: 0;
+    color: #777A7C;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.productName{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.productDescription{
+    color: #777A7C;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.priceFlex{
+    min-width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceDesc{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.offer{
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 0 9px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.realPrice{
+    color: #777A7C;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+
+
+.quantityControls{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsContainerFlex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quantityCounter{
+    background-color: #F7F8FD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.quantityCounter button{
+    background-color: #F7F8FD;
+    border: none;
+    padding: 15px ;
+    border-radius: 8px;
+}
+
+.quantityCounter span{
+    font-weight: 600;
+}
+
+
+
+.addToCartM{
+    background-color: #FF7D1B;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.addToCartM img {
+    filter: brightness(0);
+  }
+  

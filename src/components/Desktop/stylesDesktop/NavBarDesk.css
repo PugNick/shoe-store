@@ -1,0 +1,200 @@
+.navBarContainerD{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logoButtonsD{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.buttonsD{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.buttonsD p{
+    color: #747474;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+}
+
+.buttonsD p::after{
+    content: "";
+    background-color: #FF7D1B;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 36px);
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.buttonsD p:hover{
+    color: #000;
+}
+
+.buttonsD p:hover::after{
+    opacity: 1;
+    
+}
+
+.cartAvatarD{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.cartD button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.cartD .buttonCartD img{
+    transition: .3S;
+}
+
+.cartD .buttonCartD img:hover{
+    filter: grayscale(0%) brightness(0%);
+}
+
+
+
+.avatarImageContainerD img{
+    width: 55px;
+    height: auto;
+    border: solid 2px #FFF;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.avatarImageContainerD img:hover{
+    border: solid 2px #FF7D1B;
+}
+
+
+.containerCartRelativeD{
+    position: relative;
+}
+
+
+.cartContainerD{
+    position: absolute;
+    background-color: #fff;
+    left: -250px;
+    top: 10px;
+    width: 380px;
+    border-radius:8px;
+    box-shadow: 0 15px 25px rgba(73, 73, 73, 0.5);
+}
+
+
+.containerPFlexD{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+
+#cartTitleD{
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+
+.cartItemD{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.cartItemD .productInCartD{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.itemDetailsD p{
+    margin: 0;
+    font-size: 17px;
+    color: #747474;
+}
+
+.totalD{
+    color: #000;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.containerButtonChekD{
+    padding: 20px 20px 30px 20px;
+}
+
+
+.containerButtonChekD .checkoutButtonD{
+    border: none;
+    border-radius: 8px;
+    background-color: #FF7D1B;
+    padding: 20px 0;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containerButtonChekD .checkoutButtonD:hover{
+    background-color: #FFAC6A;
+}
+
+
+.deleteButtonD img{
+    transition: .3s;
+}
+
+.deleteButtonD:hover img{
+    filter: grayscale(0%) brightness(0%);
+}
+
+
+.buttonCartD{
+    width: 40px;
+}
+
+.buttonCartD img{
+    width: 100%;
+}
+
+.cartD{
+    position: relative;
+}
+
+#totalCantD{
+    position: absolute;
+    right: 0;
+    top: -8px;
+    font-size: 12px;
+    background-color: #FF7D1B;
+    color: #FFF;
+    padding: 0 10px;
+    border-radius: 100px;
+}
+
+
+
+
+.hrNoCart{
+    margin: 0 60px;
+}

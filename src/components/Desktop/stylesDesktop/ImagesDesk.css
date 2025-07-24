@@ -1,0 +1,167 @@
+.carrouselContainerD{
+    max-width: 750px;
+}
+
+
+.MainImageContainer img{
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: solid 5px #fff;
+    transition: .3s;
+}
+
+.MainImageContainer img:hover{
+    border: solid 5px #FF7D1B;
+}
+
+
+.imgsThumbContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.thumbnail-wrapper img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.thumbnail-wrapper {
+    border: 2px solid transparent; 
+    cursor: pointer;
+    max-height: 140px;
+    max-width: 140px;
+    transition: .3s;
+    
+}
+
+.thumbnail-wrapper.selected {
+    border: 3px solid #FF7D1B; 
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.thumbnail-wrapper.selected .thumbnail {
+    opacity: 0.5; /* Oscurece solo la imagen */
+}
+
+
+.thumbnail-wrapper:hover{ 
+    opacity: .5;
+    
+}
+.gohstContainer{
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.lightbox {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+
+.lightbox-content {
+    width: 1000px;
+}
+
+.lightbox-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+.lightbox-thumbnails{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+
+
+.relativeContainerImagesD{
+    position: relative;
+}
+
+.prevBtn, .nextBtn{
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.prevBtn img, .nextBtn img{
+    width: 12px;
+    height: 12px;
+    transition: .3s;
+    
+}
+
+.prevBtn {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+}
+
+.nextBtn{
+    bottom: 50%;
+    transform: translateY(50%);
+    right: -25px;
+}
+
+.prevBtn:hover img, .nextBtn:hover img{
+    filter: brightness(0) invert(45%) sepia(100%) saturate(1000%) hue-rotate(-15deg) brightness(1);
+    
+}
+
+
+
+
+.btnCloseContainer{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    background-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.closeBtn{
+    background-color: transparent;
+    border: none;
+    height: auto;
+    cursor: pointer;
+}
+
+.closeBtn img{
+    background-color: transparent;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    transition: .3s;
+}
+
+
+.closeBtn:hover img{
+    filter: brightness(0) invert(45%) sepia(100%) saturate(1000%) hue-rotate(-15deg) brightness(1);
+}
+
